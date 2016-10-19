@@ -30,7 +30,6 @@ feature 'Viewing links' do
     within 'ul#links' do
       expect(page).not_to have_content('Makers Academy')
       expect(page).not_to have_content('Code.org')
-      expect(page).to have_content('Code.org')
       expect(page).to have_content('This is Zombocom')
       expect(page).to have_content('Bubble Bobble')
     end
