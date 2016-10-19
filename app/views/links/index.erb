@@ -3,7 +3,7 @@
 <ul id = 'links'>
   <% @links.each do |link| %>
   <li>
-  	<a href=<%= link.url %>><%= link.title %></a>
+  	<a href="http://<%= link.url %>"><%= link.title %></a>
 		<% link.tags.each do |tag| %>
   		<a href="/tags/<%= tag.name %>"><%= tag.name %></a>
   	<% end %>
