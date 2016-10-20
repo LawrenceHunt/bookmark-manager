@@ -1,5 +1,6 @@
 require 'data_mapper'
 require 'dm-postgres-adapter'
+require 'sinatra/flash'
 
 require_relative 'models/link'
 require_relative 'models/tag'

@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'data_mapper'
+require 'sinatra/flash'
 # require './app/app.rb'
 require File.join(File.dirname(__FILE__), './app/app.rb')
 
