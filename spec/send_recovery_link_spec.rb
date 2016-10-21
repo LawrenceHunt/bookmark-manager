@@ -19,9 +19,4 @@ describe SendRecoverLink do
    expect(mail_gun_client).to receive(:send_message).with(sandbox_domain_name, params)
    described_class.call(user, mail_gun_client)
  end
-
- scenario 'it calls the SendRecoverLink service to send the link' do
-  expect(SendRecoverLink).to receive(:call).with(user)
-  recover_password
-end
 end
