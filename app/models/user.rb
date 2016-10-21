@@ -40,5 +40,5 @@ class User
     if (user && user.password_token_time + (60 * 60) > Time.now)
       user
     end
-end
+  end
 end
